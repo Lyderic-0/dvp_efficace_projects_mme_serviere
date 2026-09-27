@@ -1,0 +1,22 @@
+# Compilats et Fichiers Binaires Java
+*.class
+*.jar
+*.war
+*.ear
+bin/
+build/
+out/
+target/
+*.log
+
+
+# Configuration IntelliJ IDEA
+idea/
+*.iml
+*.iws
+*.ipr
+
+# Fichiers Système & Éditeurs Linux
+Thumbs.db
+*~
+*.swp

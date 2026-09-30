@@ -12,5 +12,5 @@ Cette application Java permet aux utilisateurs de consolider leurs connaissances
 | LAURENCONT | Yanis | yanis.laurencon@iut-rodez.fr | https://github.com/yanislaurencont |
 
 ## Liens utiles
-- Board agile (GitHub Project) : https://github.com/orgs/Rodez-IUT/projects/234/views/1
+- Board agile (GitHub Project) : [https://github.com/orgs/Rodez-IUT/projects/234/views/1](https://github.com/orgs/Rodez-IUT/projects/237/views/1)
 - Documents du projet (Google Drive) : https://drive.google.com/drive/u/1/folders/0ANcqKTiKCfVTUk9PVA

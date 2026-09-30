@@ -4,6 +4,10 @@ module org.example.projetjavafxtest {
 
     requires org.controlsfx.controls;
 
-    opens org.example.projetjavafxtest to javafx.fxml;
-    exports org.example.projetjavafxtest;
+    opens iut.but.informatique.exemple.premierprojetjavafx to javafx.graphics;
+    exports iut.but.informatique.exemple.premierprojetjavafx;
+    exports iut.but.informatique.exemple.premierprojetjavafx.controleur;
+    opens iut.but.informatique.exemple.premierprojetjavafx.controleur to javafx.fxml;
+    exports iut.but.informatique.exemple.premierprojetjavafx.modele;
+    opens iut.but.informatique.exemple.premierprojetjavafx.modele to javafx.fxml;
 }

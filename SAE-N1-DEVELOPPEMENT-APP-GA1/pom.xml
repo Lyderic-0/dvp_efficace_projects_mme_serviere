@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                dev.iut.sae.saen1developpementappga1/dev.iut.sae.saen1developpementappga1.HelloApplication
+                                dev.iut.sae.saen1developpementappga1/dev.iut.sae.modele.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

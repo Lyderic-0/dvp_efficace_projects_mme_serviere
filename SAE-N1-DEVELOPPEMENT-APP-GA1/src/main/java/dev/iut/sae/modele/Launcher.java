@@ -1,4 +1,4 @@
-package dev.iut.sae.model;
+package dev.iut.sae.modele;
 
 import javafx.application.Application;
 

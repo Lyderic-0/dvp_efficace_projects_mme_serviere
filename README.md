@@ -9,7 +9,7 @@ Cette application Java permet aux utilisateurs de consolider leurs connaissances
 | BAPTISTE | Felix | felix.baptiste@iut-rodez.fr | https://github.com/felixbaptiste-max |
 | DE WACHTER | Lydéric | lyderic.dewachter@iut-rodez.fr | https://github.com/Lyderic-0 |
 | INNOCENTI | Axel | axel.innocenti@iut-rodez.fr | https://github.com/axel-odt |
-| LAURENCONT | Yanis | yanis.laurencon@iut-rodez.fr | https://github.com/yanislaurencont |
+| LAURENCONT | Yanis | yanis.laurencont@iut-rodez.fr | https://github.com/yanislaurencont |
 
 ## Liens utiles
 - Board agile (GitHub Project) : [https://github.com/orgs/Rodez-IUT/projects/234/views/1](https://github.com/orgs/Rodez-IUT/projects/237/views/1)

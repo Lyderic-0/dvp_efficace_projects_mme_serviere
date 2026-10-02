@@ -1,4 +1,4 @@
-package dev.iut.sae.saen1developpementappga1;
+package dev.iut.sae.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

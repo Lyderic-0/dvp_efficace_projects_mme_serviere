@@ -21,8 +21,31 @@ public class OutilEntierRecursif {
         return fibonnacci(rangN);
     }
 
-    public static void main() {
+    public static void initialiser(int[] tab, int valeur) {
+        initialiser(tab, valeur, 0);
+    }
+
+    private static void initialiser(int[] tab, int valeur, int index) {
+        if (tab != null && index >= 0 && index < tab.length) {
+            tab[index] = valeur;
+            initialiser(tab, valeur, index + 1);
+        }
+    }
+
+    public static int ackermann(int m, int n) {
+        if (m < 0 || n < 0) {
+            return -1;
+        }
+        if (m == 0) {
+            return n + 1;
+        }
+        if (n == 0) {
+            return ackermann(m - 1, 1);
+        }
+        return ackermann(m - 1, ackermann(m, n - 1));
+    }
+
+    public static void main(String[] args) {
         System.out.printf("Suite de fibo pour n=10 est : " + Fibonnacci(10) + "\n");
-        FigureGeometrique.etoile(4);
     }
 }

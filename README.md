@@ -14,3 +14,24 @@ Cette application Java permet aux utilisateurs de consolider leurs connaissances
 ## Liens utiles
 - Board agile (GitHub Project) : [https://github.com/orgs/Rodez-IUT/projects/234/views/1](https://github.com/orgs/Rodez-IUT/projects/237/views/1)
 - Documents du projet (Google Drive) : https://drive.google.com/drive/u/1/folders/0ANcqKTiKCfVTUk9PVA
+
+## Rôles au sein de l’équipe
+#### Sprint 0 : 
+- Product Owner (PO) : DEWACHTER Lyderic
+- Scrum Master (SM) : LAURENÇONT Yanis
+- Développeur : INNOCENTI Axel / BAPTISTE Félix
+
+#### Sprint 1 : 
+- Product Owner (PO) : BAPTISTE Félix
+- Scrum Master (SM) : DEWACHTER Lyderic
+- Développeur : LAURENÇONT Yanis / INNOCENTI Axel 
+
+#### Sprint 2 : 
+- Product Owner (PO) : INNOCENTI Axel 
+- Scrum Master (SM) : BAPTISTE Félix
+- Développeur : DE WACHTER Lyderic / LAURENÇONT Yanis
+
+#### Sprint 3 : 
+- Product Owner (PO) : LAURENÇONT Yanis
+- Scrum Master (SM) : INNOCENTI Axel 
+- Développeur : BAPTISTE Félix / DEWACHTER Lyderic

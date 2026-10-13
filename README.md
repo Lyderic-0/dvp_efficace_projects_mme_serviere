@@ -1,4 +1,4 @@
-# Quiz, Test de connaissances
+# Camhoot, Quizz de connaissances
 
 ## Description du projet
 Cette application Java permet aux utilisateurs de consolider leurs connaissances grâce à des questionnaires paramétrables par catégorie et niveau de difficulté. L'application intègre une banque de questions gérée manuellement, par importation de fichiers CSV ou par transfert réseau sécurisé entre deux ordinateurs (chiffrement Vigenère/Hill et échange Diffie-Hellman). Elle assure le suivi et la mémorisation des 10 dernières tentatives pour permettre des révisions ciblées, la relecture des corrigés avec feedbacks et la mesure de la progression.

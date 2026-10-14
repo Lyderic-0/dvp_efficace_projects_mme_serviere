@@ -1,6 +1,7 @@
 package entier.arbre;
 
-public class Noeud<T> {
+// Noeud<T extends Comparable<T>> fait en sorte que des noeuds soient instanciable que dans des classes qui ont la méthode compareTo soit héritent de Comparables
+public class Noeud<T extends Comparable<T>> {
 
     private T valeurNoeud;
 
@@ -13,6 +14,20 @@ public class Noeud<T> {
             this.valeurNoeudGauche = null;
             this.valeurNoeudDroite = null;
         }
+    }
+
+    public boolean estPresente(T aChercher){
+        if (valeurNoeud.compareTo(aChercher) == 0){
+            return true;
+        }
+
+        if (aChercher.compareTo(valeurNoeud) < 0){
+            // appel récursif, chercher à gauche
+        } else {
+            // appel récursif, chercher à droite
+        }
+        // STUB
+        return true;
     }
 
     public boolean insererNoeud(T valeurAInserer){

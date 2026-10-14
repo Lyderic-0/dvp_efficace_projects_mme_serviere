@@ -1,0 +1,36 @@
+/* Arrière-plan principal */
+.root-container {
+    -fx-background-color: #071D42;
+}
+
+/* Cartes / Conteneurs de section */
+.card-box {
+    -fx-background-color: #0A2850;
+    -fx-border-color: #1A4682;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+/* Boutons principaux / Actifs (Vert turquoise) */
+.btn-primary {
+    -fx-background-color: #3ADBBF;
+    -fx-text-fill: #071D42;
+}
+
+/* Boutons secondaires (Bleu roi) */
+.btn-secondary {
+    -fx-background-color: #16498A;
+    -fx-text-fill: white;
+}
+
+/* Menu déroulant des catégories */
+.menu-button-secondary {
+    -fx-background-color: #16498A;
+    -fx-text-fill: white;
+}
+
+/* Bandeau d'information sous le nombre de questions */
+.info-banner {
+    -fx-background-color: black;
+    -fx-background-radius: 5;
+}

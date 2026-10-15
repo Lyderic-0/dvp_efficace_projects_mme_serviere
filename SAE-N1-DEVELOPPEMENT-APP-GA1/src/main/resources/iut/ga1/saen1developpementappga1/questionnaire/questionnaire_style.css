@@ -1,0 +1,83 @@
+/* --- FOND GÉNÉRAL --- */
+.root {
+    -fx-background-color: #071D42;
+}
+
+/* --- BARRE DE PROGRESSION --- */
+.progress-bar {
+    -fx-accent: #3ADBBF;
+    -fx-control-inner-background: #0E2F5B;
+    -fx-border-color: #3ADBBF;
+    -fx-border-radius: 4px;
+}
+
+.progress-bar .track {
+    -fx-background-color: #0E2F5B;
+    -fx-background-insets: 0;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #3ADBBF;
+    -fx-background-insets: 0;
+}
+
+/* --- BLOC QUESTION --- */
+.question-box {
+    -fx-background-color: #0A2850;
+    -fx-border-color: #1A4682;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+/* --- BLOCS OPTIONS --- */
+.option-box {
+    -fx-background-color: #0E2F5B;
+    -fx-border-color: #1A4682;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.option-box-selected {
+    -fx-background-color: #3ADBBF;
+    -fx-border-color: #3ADBBF;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+/* --- BOUTONS RADIO --- */
+.radio-button .radio {
+    -fx-background-color: transparent;
+    -fx-border-color: #D1E0EE;
+    -fx-border-width: 2px;
+    -fx-border-radius: 100%;
+    -fx-background-radius: 100%;
+    -fx-padding: 3px; 
+}
+
+.radio-button .dot {
+    -fx-background-color: transparent;
+    -fx-background-radius: 100%;
+    -fx-background-insets: 0;
+    -fx-padding: 4px; 
+}
+
+.radio-button:selected .radio {
+    -fx-border-color: #071D42;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #071D42;
+}
+
+.radio-button:selected {
+    -fx-background-color: #3ADBBF;
+}
+
+/* --- BOUTONS D'ACTION --- */
+.btn-blue {
+    -fx-background-color: #16498A;
+}
+
+.btn-turquoise {
+    -fx-background-color: #3ADBBF;
+}

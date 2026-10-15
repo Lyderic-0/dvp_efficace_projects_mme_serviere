@@ -15,7 +15,7 @@
       prefWidth="1100"
       prefHeight="620"
       styleClass="root-menu"
-      stylesheets="@style.css">
+      stylesheets="@StyleMenu.css">
 
     <padding>
         <Insets top="40" right="40" bottom="30" left="40"/>

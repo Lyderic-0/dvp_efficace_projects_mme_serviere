@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 
 /**
  * Classe principale : crée les scènes au démarrage et gère la navigation.
@@ -27,26 +28,32 @@ public class Main extends Application {
     //  Navigation 
 
     public static void activerMenu() {
+
         afficher(sceneMenu);
     }
 
     public static void activerNouveauQuiz() {
+
         afficher(sceneNouveauQuiz);
     }
 
     public static void activerQuestion() {
+
         afficher(sceneQuestion);
     }
 
     public static void activerHistorique() {
+
         afficher(sceneHistorique);
     }
 
     public static void activerConnexion() {
+
         afficher(sceneConnexion);
     }
 
     public static void activerParametre() {
+
         afficher(sceneParametre);
     }
 
@@ -63,7 +70,12 @@ public class Main extends Application {
 
     /** Charge un fichier FXML (même package que Main) et crée la scène. */
     private static Scene charger(String fichierFxml) throws IOException {
-        FXMLLoader loader = new FXMLLoader(Main.class.getResource(fichierFxml));
+        URL resource = Main.class.getResource(fichierFxml);
+        if (resource == null) {
+            throw new IllegalArgumentException("Fichier FXML introuvable : " + fichierFxml
+                    + ". Vérifiez qu'il se trouve dans src/main/resources/iut/ga1/saen1developpementappga1/");
+        }
+        FXMLLoader loader = new FXMLLoader(resource);
         return new Scene(loader.load(), LARGEUR, HAUTEUR);
     }
 
@@ -73,8 +85,8 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         fenetre = stage;
 
-        sceneMenu = charger("MenuVue.fxml");
-        sceneNouveauQuiz = charger("nouveau_quiz.fxml");
+        sceneMenu = charger("menu/MenuVue.fxml");
+        sceneNouveauQuiz = charger("nouveauQuiz/nouveau_quiz.fxml");
         //TODO sceneQuestion    = charger("QuestionVue.fxml");
         //TODO sceneHistorique  = charger("HistoriqueVue.fxml");
         //TODO sceneConnexion   = charger("ConnexionVue.fxml");

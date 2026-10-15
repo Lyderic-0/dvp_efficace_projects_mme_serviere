@@ -13,31 +13,31 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #071D42;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1100.0" style="-fx-background-color: #071D42;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox prefHeight="400.0" prefWidth="616.0">
+      <HBox prefHeight="540.0" prefWidth="1157.0">
          <children>
-            <GridPane prefHeight="320.0" prefWidth="535.0">
+            <GridPane prefHeight="495.0" prefWidth="1089.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
                   <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="50.0" minHeight="4.0" prefHeight="29.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="118.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="182.0" minHeight="10.0" prefHeight="122.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="109.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="103.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
                   <Label prefHeight="40.0" prefWidth="285.0" text="Nouveau Quiz" textFill="WHITE">
                      <font>
-                        <Font size="28.0" />
+                        <Font name="System Bold" size="32.0" />
                      </font>
                   </Label>
-                  <Label prefHeight="40.0" prefWidth="394.0" text="Configurez les paramètres de votre quiz avant de commencer :" textFill="WHITE" GridPane.rowIndex="1">
+                  <Label prefHeight="40.0" prefWidth="421.0" text="Configurez les paramètres de votre quiz avant de commencer :" textFill="WHITE" GridPane.rowIndex="1">
                      <font>
-                        <Font size="11.0" />
+                        <Font size="15.0" />
                      </font>
                      <opaqueInsets>
                         <Insets />
@@ -53,12 +53,24 @@
                               <Font size="17.0" />
                            </font>
                         </Label>
-                        <ButtonBar prefHeight="45.0" prefWidth="350.0">
+                        <ButtonBar prefHeight="98.0" prefWidth="839.0">
                           <buttons>
-                            <Button mnemonicParsing="false" style="-fx-background-color: #3ADBBF;" text="Indifférent" />
-                              <Button mnemonicParsing="false" style="-fx-background-color: #16498A;" text="1" textFill="WHITE" />
-                              <Button mnemonicParsing="false" style="-fx-background-color: #16498A;" text="2" textFill="WHITE" />
-                              <Button mnemonicParsing="false" style="-fx-background-color: #16498A;" text="3" textFill="WHITE" />
+                            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="240.0" style="-fx-background-color: #3ADBBF;" text="Indifférent">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Button>
+                              <Button mnemonicParsing="false" prefHeight="45.0" style="-fx-background-color: #16498A;" text="1" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Button>
+                              <Button mnemonicParsing="false" prefHeight="45.0" style="-fx-background-color: #16498A;" text="2" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Button>
+                              <Button mnemonicParsing="false" prefHeight="45.0" style="-fx-background-color: #16498A;" text="3" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Button>
                           </buttons>
                            <HBox.margin>
                               <Insets />
@@ -72,18 +84,21 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </padding>
                   </HBox>
-                  <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="520.0" style="-fx-background-color: #0A2850; -fx-border-color: #1A4682; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.rowIndex="3">
+                  <HBox alignment="CENTER_LEFT" prefHeight="102.0" prefWidth="1019.0" style="-fx-background-color: #0A2850; -fx-border-color: #1A4682; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.rowIndex="3">
                      <children>
                         <Label prefHeight="34.0" prefWidth="169.0" text="Catégorie (facultatif)" textFill="WHITE">
                            <font>
                               <Font size="17.0" />
                            </font>
                         </Label>
-                        <MenuButton mnemonicParsing="false" prefHeight="25.0" prefWidth="330.0" style="-fx-background-color: #16498A;" text="Toutes les catégories" textAlignment="CENTER" textFill="WHITE">
+                        <MenuButton mnemonicParsing="false" prefHeight="38.0" prefWidth="809.0" style="-fx-background-color: #16498A;" text="Toutes les catégories" textFill="WHITE">
                           <items>
                             <MenuItem mnemonicParsing="false" text="Action 1" />
                             <MenuItem mnemonicParsing="false" text="Action 2" />
                           </items>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
                         </MenuButton>
                      </children>
                      <padding>
@@ -98,27 +113,36 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </padding>
                      <children>
-                        <VBox prefHeight="47.0" prefWidth="573.0">
+                        <VBox prefHeight="54.0" prefWidth="1059.0">
                            <children>
-                              <HBox prefHeight="100.0" prefWidth="200.0">
+                              <HBox prefHeight="26.0" prefWidth="686.0">
                                  <children>
-                                    <Label prefHeight="26.0" prefWidth="170.0" text="Nombre de questions " textFill="WHITE">
+                                    <Label prefHeight="26.0" prefWidth="205.0" text="Nombre de questions " textFill="WHITE">
                                        <font>
                                           <Font size="17.0" />
                                        </font>
                                     </Label>
-                                    <ButtonBar prefHeight="26.0" prefWidth="327.0">
+                                    <ButtonBar prefHeight="26.0" prefWidth="833.0">
                                        <buttons>
-                                          <Button mnemonicParsing="false" style="-fx-background-color: #16498A;" text="5" textFill="WHITE" />
-                                          <Button mnemonicParsing="false" style="-fx-background-color: #3ADBBF;" text="10" />
-                                          <Button mnemonicParsing="false" style="-fx-background-color: #16498A;" text="20" textFill="WHITE" />
+                                          <Button mnemonicParsing="false" style="-fx-background-color: #16498A;" text="5" textFill="WHITE">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></Button>
+                                          <Button mnemonicParsing="false" style="-fx-background-color: #3ADBBF;" text="10">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></Button>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: #16498A;" text="20" textFill="WHITE">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></Button>
                                        </buttons>
                                     </ButtonBar>
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: black; -fx-background-radius: 5;">
                                  <VBox.margin>
-                                    <Insets top="5.0" />
+                                    <Insets top="15.0" />
                                  </VBox.margin>
                                  <children>
                                     <Label text="Seules 7 questions correspondent. Poursuivre avec 7 questions ?" textFill="WHITE" />
@@ -133,8 +157,14 @@
                   </HBox>
                   <ButtonBar prefHeight="26.0" prefWidth="327.0" GridPane.rowIndex="5">
                      <buttons>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #16498A;" text="Retour" textFill="WHITE" />
-                        <Button mnemonicParsing="false" style="-fx-background-color: #3ADBBF;" text="Lancer le Quiz" />
+                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="175.0" style="-fx-background-color: #16498A;" text="Retour" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Button>
+                        <Button mnemonicParsing="false" prefHeight="45.0" style="-fx-background-color: #3ADBBF;" text="Lancer le Quiz">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Button>
                      </buttons>
                      <GridPane.margin>
                         <Insets top="20.0" />

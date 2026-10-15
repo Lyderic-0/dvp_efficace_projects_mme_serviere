@@ -1,0 +1,80 @@
+.root-menu {
+    -fx-background-color: #071a3e;
+    -fx-font-family: "Inter", "Segoe UI", "Arial";
+}
+
+.logo {
+    -fx-padding: 10 0 0 0;
+}
+
+.logo-cam {
+    -fx-font-size: 72px;
+    -fx-font-weight: 900;
+    -fx-fill: #1b7cf0;
+}
+
+.logo-hout {
+    -fx-font-size: 72px;
+    -fx-font-weight: 900;
+    -fx-fill: #7b2ff2;
+}
+
+.sous-titre {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 26px;
+    -fx-font-weight: 300;
+}
+
+/* Boutons du menu  */
+.btn-menu {
+    -fx-background-color: #164a8a;
+    -fx-background-radius: 10;
+    -fx-border-color: #1f5fae;
+    -fx-border-radius: 10;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-pref-height: 62px;
+    -fx-cursor: hand;
+}
+
+.btn-menu:hover {
+    -fx-background-color: #1d5ba6;
+}
+
+.btn-menu:pressed {
+    -fx-background-color: #123c71;
+}
+
+.btn-menu:focused {
+    -fx-border-color: #3adcc4;
+}
+
+/* Bouton principal (JOUER) */
+.btn-principal {
+    -fx-background-color: #3adcc4;
+    -fx-border-color: #3adcc4;
+    -fx-text-fill: #062040;
+}
+
+.btn-principal:hover {
+    -fx-background-color: #5ae8d2;
+}
+
+.btn-principal:pressed {
+    -fx-background-color: #2cb8a3;
+}
+
+/*  Bouton QUITTER  */
+.btn-quitter {
+    -fx-background-color: transparent;
+    -fx-text-fill: #8fa6cc;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.btn-quitter:hover {
+    -fx-text-fill: #ffffff;
+    -fx-underline: true;
+}

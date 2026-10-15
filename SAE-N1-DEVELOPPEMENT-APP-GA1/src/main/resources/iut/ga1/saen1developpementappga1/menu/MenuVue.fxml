@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="iut.ga1.saen1developpementappga1.ControleurMenu"
+      alignment="TOP_CENTER"
+      spacing="14"
+      prefWidth="1100"
+      prefHeight="620"
+      styleClass="root-menu"
+      stylesheets="@StyleMenu.css">
+
+    <padding>
+        <Insets top="40" right="40" bottom="30" left="40"/>
+    </padding>
+
+    <!-- Logo : texte en deux couleurs (remplaçable par un ImageView avec le vrai logo) -->
+    <TextFlow textAlignment="CENTER" styleClass="logo">
+        <Text text="CAM" styleClass="logo-cam"/>
+        <Text text="HOUT" styleClass="logo-hout"/>
+    </TextFlow>
+
+    <Label text="Quiz de connaissances" styleClass="sous-titre"/>
+
+    <VBox alignment="CENTER" spacing="14" maxWidth="590" styleClass="zone-boutons">
+        <padding>
+            <Insets top="20" bottom="10"/>
+        </padding>
+
+        <Button fx:id="btnJouer" text="JOUER" onAction="#handleJouer"
+                maxWidth="Infinity" styleClass="btn-menu, btn-principal"/>
+        <Button fx:id="btnQuestions" text="QUESTIONS" onAction="#handleQuestion"
+                maxWidth="Infinity" styleClass="btn-menu"/>
+        <Button fx:id="btnHistorique" text="HISTORIQUE" onAction="#handleHistorique"
+                maxWidth="Infinity" styleClass="btn-menu"/>
+        <Button fx:id="btnConnexion" text="CONNEXION" onAction="#handleConnexion"
+                maxWidth="Infinity" styleClass="btn-menu"/>
+        <Button fx:id="btnParametres" text="PARAMÈTRES" onAction="#handleParametre"
+                maxWidth="Infinity" styleClass="btn-menu"/>
+    </VBox>
+
+    <Button fx:id="btnQuitter" text="QUITTER" onAction="#handleQuitter"
+            styleClass="btn-quitter"/>
+
+</VBox>

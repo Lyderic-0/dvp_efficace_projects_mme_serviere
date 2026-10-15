@@ -1,36 +1,130 @@
-/* Arrière-plan principal */
-.root-container {
+/* Style global de la fenêtre Quiz */
+.root-quiz {
     -fx-background-color: #071D42;
+    -fx-font-family: "Inter", "Segoe UI", "Arial", sans-serif;
+}
+
+/* Titres */
+.title-quiz {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+.subtitle-quiz {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 15px;
 }
 
 /* Cartes / Conteneurs de section */
-.card-box {
+.card-section {
     -fx-background-color: #0A2850;
     -fx-border-color: #1A4682;
-    -fx-border-radius: 10;
-    -fx-background-radius: 10;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
 }
 
-/* Boutons principaux / Actifs (Vert turquoise) */
+.card-label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 17px;
+}
+
+/* Boutons d'options (niveaux, nombre de questions) */
+.btn-option {
+    -fx-background-color: #16498A;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 15px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.btn-option:hover {
+    -fx-background-color: #1D5CAE;
+}
+
+/* Bouton d'option sélectionné */
+.btn-option-selected {
+    -fx-background-color: #3ADBBF;
+    -fx-text-fill: #071D42;
+    -fx-font-weight: bold;
+}
+
+.btn-option-selected:hover {
+    -fx-background-color: #52E2C9;
+}
+
+/* Menu Déroulant (Catégories) */
+.menu-button-custom {
+    -fx-background-color: #16498A;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 15px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.menu-button-custom:hover {
+    -fx-background-color: #1D5CAE;
+}
+
+.menu-button-custom .label {
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Menu contextuel déroulant */
+.menu-button-custom .menu-item {
+    -fx-background-color: #0A2850;
+}
+
+.menu-button-custom .menu-item .label {
+    -fx-text-fill: #FFFFFF;
+}
+
+.menu-button-custom .menu-item:hover {
+    -fx-background-color: #16498A;
+}
+
+/* Bannière d'information */
+.info-banner {
+    -fx-background-color: #000000;
+    -fx-background-radius: 5px;
+}
+
+.info-banner-text {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+}
+
+/* Bouton principal (Lancer le Quiz) */
 .btn-primary {
     -fx-background-color: #3ADBBF;
     -fx-text-fill: #071D42;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
 }
 
-/* Boutons secondaires (Bleu roi) */
+.btn-primary:hover {
+    -fx-background-color: #52E2C9;
+}
+
+.btn-primary:pressed {
+    -fx-background-color: #2CB8A3;
+}
+
+/* Bouton secondaire (Retour) */
 .btn-secondary {
     -fx-background-color: #16498A;
-    -fx-text-fill: white;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 20px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
 }
 
-/* Menu déroulant des catégories */
-.menu-button-secondary {
-    -fx-background-color: #16498A;
-    -fx-text-fill: white;
+.btn-secondary:hover {
+    -fx-background-color: #1D5CAE;
 }
 
-/* Bandeau d'information sous le nombre de questions */
-.info-banner {
-    -fx-background-color: black;
-    -fx-background-radius: 5;
+.btn-secondary:pressed {
+    -fx-background-color: #123C71;
 }

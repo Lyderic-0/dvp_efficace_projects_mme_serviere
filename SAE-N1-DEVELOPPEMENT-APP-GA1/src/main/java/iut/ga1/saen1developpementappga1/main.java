@@ -21,11 +21,14 @@ public class Main extends Application {
     private static Scene sceneMenu;
     private static Scene sceneNouveauQuiz;
     private static Scene sceneQuestion;
+    private static Scene sceneQuestionnaire;
+    private static Scene sceneImportation;
     private static Scene sceneHistorique;
     private static Scene sceneConnexion;
     private static Scene sceneParametre;
+    private static Scene sceneResultat;
 
-    //  Navigation 
+    /* Navigation */
 
     public static void activerMenu() {
 
@@ -36,10 +39,25 @@ public class Main extends Application {
 
         afficher(sceneNouveauQuiz);
     }
+    
+    public static void activerQuestionnaire() {
+
+        afficher(sceneQuestionnaire);
+    }
+
+    public static void activerResultat() {
+
+        afficher(sceneResultat);
+    }
 
     public static void activerQuestion() {
 
         afficher(sceneQuestion);
+    }
+
+    public static void activerImportation() {
+
+        afficher(sceneImportation);
     }
 
     public static void activerHistorique() {
@@ -86,11 +104,14 @@ public class Main extends Application {
         fenetre = stage;
 
         sceneMenu = charger("menu/MenuVue.fxml");
-        sceneNouveauQuiz = charger("nouveauQuiz/nouveau_quiz.fxml");
-        //TODO sceneQuestion    = charger("QuestionVue.fxml");
-        //TODO sceneHistorique  = charger("HistoriqueVue.fxml");
-        //TODO sceneConnexion   = charger("ConnexionVue.fxml");
-        //TODO sceneParametre   = charger("ParametreVue.fxml");
+        sceneNouveauQuiz = charger("nouveauQuiz/nouveauQuiz.fxml");
+        //TODO sceneQuestionnaire    = charger("questionnaire/questionnaire.fxml");
+        //TODO sceneResultat    = charger("resultat/resultat.fxml");
+        //TODO sceneImportation    = charger("importationQuestion/importation.fxml");
+        //TODO sceneQuestion    = charger("question/question.fxml");
+        //TODO sceneHistorique  = charger("historique/HistoriqueVue.fxml");
+        //TODO sceneConnexion   = charger("connexion/ConnexionVue.fxml");
+        //TODO sceneParametre   = charger("parametre/ParametreVue.fxml");
 
         stage.setTitle("CamHoot - Quiz de connaissances");
         stage.setResizable(false);

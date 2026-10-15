@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1100.0" styleClass="root-quiz" stylesheets="@styles_nouveau_quiz.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="540.0" prefWidth="1157.0">
+         <children>
+            <GridPane prefHeight="495.0" prefWidth="1089.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="4.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="118.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="182.0" minHeight="10.0" prefHeight="122.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="109.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="103.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="40.0" prefWidth="285.0" styleClass="title-quiz" text="Nouveau Quiz" />
+                  <Label prefHeight="40.0" prefWidth="421.0" styleClass="subtitle-quiz" text="Configurez les paramètres de votre quiz avant de commencer :" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="520.0" styleClass="card-section" GridPane.rowIndex="2">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="157.0" styleClass="card-label" text="Niveau de Difficulté" />
+                        <ButtonBar prefHeight="98.0" prefWidth="839.0">
+                           <buttons>
+                              <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="240.0" styleClass="btn-option, btn-option-selected" text="Indifférent" />
+                              <Button mnemonicParsing="false" prefHeight="45.0" styleClass="btn-option" text="1" />
+                              <Button mnemonicParsing="false" prefHeight="45.0" styleClass="btn-option" text="2" />
+                              <Button mnemonicParsing="false" prefHeight="45.0" styleClass="btn-option" text="3" />
+                           </buttons>
+                        </ButtonBar>
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="102.0" prefWidth="1019.0" styleClass="card-section" GridPane.rowIndex="3">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="169.0" styleClass="card-label" text="Catégorie (facultatif)" />
+                        <MenuButton mnemonicParsing="false" prefHeight="38.0" prefWidth="809.0" styleClass="menu-button-custom" text="Toutes les catégories">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                           </items>
+                        </MenuButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="520.0" styleClass="card-section" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <VBox prefHeight="54.0" prefWidth="1059.0">
+                           <children>
+                              <HBox prefHeight="26.0" prefWidth="686.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="205.0" styleClass="card-label" text="Nombre de questions " />
+                                    <ButtonBar prefHeight="26.0" prefWidth="833.0">
+                                       <buttons>
+                                          <Button mnemonicParsing="false" styleClass="btn-option" text="5" />
+                                          <Button mnemonicParsing="false" styleClass="btn-option, btn-option-selected" text="10" />
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" styleClass="btn-option" text="20" />
+                                       </buttons>
+                                    </ButtonBar>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" styleClass="info-banner">
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label styleClass="info-banner-text" text="Seules 7 questions correspondent. Poursuivre avec 7 questions ?" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <ButtonBar prefHeight="26.0" prefWidth="327.0" GridPane.rowIndex="5">
+                     <buttons>
+                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="175.0" styleClass="btn-secondary" text="Retour" />
+                        <Button mnemonicParsing="false" prefHeight="45.0" styleClass="btn-primary" text="Lancer le Quiz" />
+                     </buttons>
+                     <GridPane.margin>
+                        <Insets top="20.0" />
+                     </GridPane.margin>
+                  </ButtonBar>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+</HBox>

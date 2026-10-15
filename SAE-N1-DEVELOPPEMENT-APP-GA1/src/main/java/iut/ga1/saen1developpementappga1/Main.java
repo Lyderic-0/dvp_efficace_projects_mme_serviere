@@ -105,7 +105,7 @@ public class Main extends Application {
 
         sceneMenu = charger("menu/MenuVue.fxml");
         sceneNouveauQuiz = charger("nouveauQuiz/nouveauQuiz.fxml");
-        //TODO sceneQuestionnaire    = charger("questionnaire/questionnaire.fxml");
+        sceneQuestionnaire    = charger("questionnaire/questionnaire.fxml");
         //TODO sceneResultat    = charger("resultat/resultat.fxml");
         //TODO sceneImportation    = charger("importationQuestion/importation.fxml");
         //TODO sceneQuestion    = charger("question/question.fxml");

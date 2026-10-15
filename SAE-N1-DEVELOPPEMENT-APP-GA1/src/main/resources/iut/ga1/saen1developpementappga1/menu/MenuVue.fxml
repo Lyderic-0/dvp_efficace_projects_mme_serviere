@@ -21,7 +21,6 @@
         <Insets top="40" right="40" bottom="30" left="40"/>
     </padding>
 
-    <!-- Logo : texte en deux couleurs (remplaçable par un ImageView avec le vrai logo) -->
     <TextFlow textAlignment="CENTER" styleClass="logo">
         <Text text="CAM" styleClass="logo-cam"/>
         <Text text="HOUT" styleClass="logo-hout"/>

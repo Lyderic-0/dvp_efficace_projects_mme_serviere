@@ -36,4 +36,12 @@ public class ResultatImport {
         return categoriesCrees;
     }
 
+    public void setImportees(int importees) {
+        this.importees = importees;
+    }
+
+    public void setDoublons(int doublons) {
+        this.doublons = doublons;
+    }
+
 }

@@ -15,7 +15,8 @@ public class Question {
 
     private List<String> reponsesFausses;
 
-    public Question(String libelle, Categorie categorie, Niveau niveau, String reponsejuste, List<String> reponsesFausses, String feedback){
+    public Question(String libelle, Categorie categorie, Niveau niveau, String reponsejuste,
+                    List<String> reponsesFausses, String feedback){
         this.libelle = libelle;
         this.categorie = categorie;
         this.niveau = niveau;

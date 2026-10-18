@@ -59,10 +59,36 @@ public class ImporteurCSV {
 
             if (!verifierLigne(colonnes)) {
                 resultat.getErreurs().add("Ligne invalide : " + ligne);
+                continue;
             }
+
+            // Ajout chaques attributs leurs valeurs validés par verifierLigne
+            String nomCategorie = colonnes[0].trim();
+            Niveau niveau        = Niveau.valueOf(colonnes[1].trim().toUpperCase());
+            String libelle       = colonnes[2].trim();
+            String reponseJuste  = colonnes[3].trim();
+            List<String> reponsesFausses = new ArrayList<>();
+
+
+            for (int i = 4; i < colonnes.length; i++) {
+                String reponse = colonnes[i].trim();
+                reponsesFausses.add(reponse);
+            }
+
+            Categorie categorie = banqueQuestion.trouverOuCreerCategorie(nomCategorie);
+
+            Question question = new Question(libelle, categorie, niveau,
+                    reponseJuste, reponsesFausses, "");
+
+            if (banqueQuestion.estDoublon(question, categorie)) {
+                resultat.getErreurs().add("Question déjà présente (ignorée) : " + libelle);
+                continue;
+            }
+
+            banqueQuestion.ajouterQuestion(question, categorie);
         }
 
-        // TODO Finir l'importation des listes...
+
 
         return resultat;
     }
@@ -72,7 +98,7 @@ public class ImporteurCSV {
      */
     public boolean verifierLigne(String[] colonnes) {
         // 5 Attributes nécéssaire fixés ( libellé, categorie, reponseJuste, réponseFausse et niveau)
-        if (colonnes == null || colonnes.length < 5) {
+        if (colonnes == null || colonnes.length < 5 || colonnes.length > 8) {
             return false;
         }
 
@@ -80,11 +106,18 @@ public class ImporteurCSV {
         String niveauStr = colonnes[1].trim();
         String libelle = colonnes[2].trim();
         String reponseJuste = colonnes[3].trim();
-        String reponseFausse1 = colonnes[4].trim();
 
 
-        if (categorie.isEmpty() || libelle.isEmpty() || reponseJuste.isEmpty() || reponseFausse1.isEmpty() || niveauStr.isEmpty()) {
+        if (categorie.isEmpty() || libelle.isEmpty() || reponseJuste.isEmpty() || niveauStr.isEmpty()) {
             return false;
+        }
+
+        // Vérifie que les réponses fausses sont pas vides
+        for (int i = 4; i < colonnes.length; i++) {
+            String reponse = colonnes[i].trim();
+            if (reponse.isEmpty()) {
+                return false;
+            }
         }
 
         try {

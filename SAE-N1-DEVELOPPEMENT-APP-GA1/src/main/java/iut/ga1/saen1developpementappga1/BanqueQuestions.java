@@ -11,8 +11,10 @@ public class BanqueQuestions {
         return categories;
     }
 
-    public void ajouterCategorie(String nom) {
-        categories.add(new Categorie(nom));
+    public Categorie ajouterCategorie(String nom) {
+        Categorie nouvelleCategorie = new Categorie(nom);
+        categories.add(nouvelleCategorie);
+        return nouvelleCategorie;
     }
 
     public void supprimerCategorie(Categorie categorie) {
@@ -77,5 +79,15 @@ public class BanqueQuestions {
             toutesLesQuestions.addAll(categorie.getQuestions());
         }
         return toutesLesQuestions;
+    }
+
+    public Categorie creerOuAjouterCategorie(String nom){
+        for (Categorie categorie : categories){
+            if (categorie.getNom().equalsIgnoreCase(nom)) {
+                return categorie;
+            }
+
+        }
+        return ajouterCategorie(nom);
     }
 }

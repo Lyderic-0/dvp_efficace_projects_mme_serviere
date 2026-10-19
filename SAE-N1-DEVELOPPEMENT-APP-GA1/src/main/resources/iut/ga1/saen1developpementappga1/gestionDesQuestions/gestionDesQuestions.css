@@ -1,0 +1,141 @@
+/* =========================================================
+   Gestion des questions - feuille de style
+   ========================================================= */
+
+/* ---------- Fond de la fenêtre ---------- */
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom right, #06183a, #0b2c63);
+    -fx-font-family: "System";
+}
+
+/* ---------- En-tête ---------- */
+.page-title {
+    -fx-text-fill: #cfe0ff;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+.page-subtitle {
+    -fx-text-fill: #9fb4d9;
+    -fx-font-size: 14px;
+}
+
+/* ---------- Panneaux (catégories + questions) ---------- */
+.question-box {
+    -fx-background-color: rgba(18, 60, 125, 0.25);
+    -fx-background-radius: 20;
+    -fx-border-color: #1d4a92;
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+}
+
+.section-title {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+/* ---------- Boutons d'action (Ajouter, Modifier, Suppr., Import CSV, Retour) ---------- */
+.btn-blue {
+    -fx-background-color: #164a91;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+}
+
+.btn-blue:hover {
+    -fx-background-color: #1e5cb0;
+}
+
+.btn-blue:pressed {
+    -fx-background-color: #123c78;
+}
+
+/* Bouton Retour : plus grand que les autres */
+.btn-retour {
+    -fx-font-size: 16px;
+    -fx-padding: 12 20 12 20;
+}
+
+/* ---------- Boutons de catégories ---------- */
+.category-btn {
+    -fx-background-color: #0f2f66;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 12 16 12 16;
+    -fx-cursor: hand;
+}
+
+.category-btn:hover {
+    -fx-background-color: #153d82;
+}
+
+/* Catégorie sélectionnée (turquoise) */
+.category-btn-selected,
+.category-btn-selected:hover {
+    -fx-background-color: #2fe0c0;
+    -fx-border-color: #2fe0c0;
+    -fx-text-fill: #06223f;
+}
+
+/* ---------- TableView (prêt pour quand tu l'ajouteras) ---------- */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-size: 32px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell {
+    -fx-background-color: #0d2a5c;
+    -fx-background-insets: 0 0 4 0;
+    -fx-border-color: transparent;
+    -fx-cell-size: 40px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #0f3470;
+    -fx-border-color: #2fe0c0;
+    -fx-border-width: 2;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
+.table-row-cell .table-cell {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-border-color: transparent;
+}
+
+/* Cache les barres de défilement si tu ne les veux pas */
+.table-view .scroll-bar {
+    -fx-background-color: transparent;
+}

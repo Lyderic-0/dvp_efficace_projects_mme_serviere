@@ -11,9 +11,9 @@ public class ImporteurCSV {
 
     // Séparateur CSV
     private char separateur = ';';
-    private BanqueQuestion banqueQuestion;
+    private BanqueQuestions banqueQuestion;
 
-    public ImporteurCSV(BanqueQuestion banqueQuestion){
+    public ImporteurCSV(BanqueQuestions banqueQuestion){
         this.banqueQuestion = banqueQuestion;
     }
 
@@ -75,7 +75,7 @@ public class ImporteurCSV {
                 reponsesFausses.add(reponse);
             }
 
-            Categorie categorie = banqueQuestion.trouverOuCreerCategorie(nomCategorie);
+            Categorie categorie = banqueQuestion.creerOuAjouterCategorie(nomCategorie);
 
             Question question = new Question(libelle, categorie, niveau,
                     reponseJuste, reponsesFausses, "");

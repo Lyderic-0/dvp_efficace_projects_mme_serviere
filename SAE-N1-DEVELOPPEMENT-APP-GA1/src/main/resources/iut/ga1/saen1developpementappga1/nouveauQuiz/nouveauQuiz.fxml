@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1100.0" styleClass="root-quiz" stylesheets="@styles_nouveau_quiz.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1100.0" styleClass="root-quiz" stylesheets="@styles_nouveau_quiz.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iut.ga1.saen1developpementappga1.ControleurNouveauQuiz">
    <children>
       <HBox prefHeight="540.0" prefWidth="1157.0">
          <children>
@@ -107,8 +99,8 @@
                   </HBox>
                   <ButtonBar prefHeight="26.0" prefWidth="327.0" GridPane.rowIndex="5">
                      <buttons>
-                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="175.0" styleClass="btn-secondary" text="Retour" />
-                        <Button mnemonicParsing="false" prefHeight="45.0" styleClass="btn-primary" text="Lancer le Quiz" />
+                        <Button fx:id="btnRetour" mnemonicParsing="false" onAction="#handleRetour" prefHeight="45.0" prefWidth="175.0" styleClass="btn-secondary" text="Retour" />
+                        <Button mnemonicParsing="false" onAction="#handleLancer" prefHeight="45.0" styleClass="btn-primary" text="Lancer le Quiz" />
                      </buttons>
                      <GridPane.margin>
                         <Insets top="20.0" />

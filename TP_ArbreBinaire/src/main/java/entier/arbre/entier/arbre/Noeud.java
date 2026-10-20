@@ -1,47 +1,68 @@
 package entier.arbre;
 
-// Noeud<T extends Comparable<T>> fait en sorte que des noeuds soient instanciable que dans des classes qui ont la méthode compareTo soit héritent de Comparables
 public class Noeud<T extends Comparable<T>> {
 
     private T valeurNoeud;
-
     private Noeud<T> valeurNoeudGauche;
     private Noeud<T> valeurNoeudDroite;
 
-    public Noeud(T valeurNoeud){
-        if (valeurNoeud != null){
+    public Noeud(T valeurNoeud) {
+        if (valeurNoeud != null) {
             this.valeurNoeud = valeurNoeud;
             this.valeurNoeudGauche = null;
             this.valeurNoeudDroite = null;
         }
     }
 
-    public boolean estPresente(T aChercher){
-        if (valeurNoeud.compareTo(aChercher) == 0){
-            return true;
-        }
-
-        if (aChercher.compareTo(valeurNoeud) < 0){
-            // appel récursif, chercher à gauche
-        } else {
-            // appel récursif, chercher à droite
-        }
-        // STUB
-        return true;
-    }
-
-    public boolean insererNoeud(T valeurAInserer){
-        if (valeurAInserer == null){
+    public boolean estPresente(T aChercher) {
+        if (aChercher == null || this.valeurNoeud == null) {
             return false;
         }
-        // TODO Continuer comparaison
-
-        return true;
+        int comp = aChercher.compareTo(this.valeurNoeud);
+        if (comp == 0) {
+            return true;
+        } else if (comp < 0) {
+            return this.valeurNoeudGauche != null && this.valeurNoeudGauche.estPresente(aChercher);
+        } else {
+            return this.valeurNoeudDroite != null && this.valeurNoeudDroite.estPresente(aChercher);
+        }
     }
 
+    public boolean inserer(T valeurAInserer) {
+        if (valeurAInserer == null) {
+            return false;
+        }
+        int comp = valeurAInserer.compareTo(this.valeurNoeud);
+        if (comp == 0) {
+            return false;
+        } else if (comp < 0) {
+            if (this.valeurNoeudGauche == null) {
+                this.valeurNoeudGauche = new Noeud<>(valeurAInserer);
+                return true;
+            }
+            return this.valeurNoeudGauche.inserer(valeurAInserer);
+        } else {
+            if (this.valeurNoeudDroite == null) {
+                this.valeurNoeudDroite = new Noeud<>(valeurAInserer);
+                return true;
+            }
+            return this.valeurNoeudDroite.inserer(valeurAInserer);
+        }
+    }
 
+    public boolean insererNoeud(T valeurAInserer) {
+        return inserer(valeurAInserer);
+    }
 
+    public T getValeurNoeud() {
+        return valeurNoeud;
+    }
 
+    public Noeud<T> getValeurNoeudGauche() {
+        return valeurNoeudGauche;
+    }
 
-
+    public Noeud<T> getValeurNoeudDroite() {
+        return valeurNoeudDroite;
+    }
 }

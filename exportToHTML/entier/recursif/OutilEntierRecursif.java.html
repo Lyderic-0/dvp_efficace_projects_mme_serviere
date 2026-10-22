@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>OutilEntierRecursif.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #2aacb8;}
+.s4 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+OutilEntierRecursif.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">entier</span><span class="s2">.</span><span class="s1">recursif</span><span class="s2">;</span>
+
+<span class="s0">import static </span><span class="s1">entier</span><span class="s2">.</span><span class="s1">recursif</span><span class="s2">.</span><span class="s1">FigureGeometrique</span><span class="s2">.</span><span class="s1">etoile</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">OutilEntierRecursif </span><span class="s2">{</span>
+
+    <span class="s0">public static int </span><span class="s1">fibonnacci</span><span class="s2">(</span><span class="s0">int </span><span class="s1">rangN</span><span class="s2">){</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">rangN </span><span class="s2">== </span><span class="s3">1</span><span class="s2">) {</span>
+            <span class="s0">return </span><span class="s3">1</span><span class="s2">;</span>
+        <span class="s2">} </span><span class="s0">else if </span><span class="s2">(</span><span class="s1">rangN </span><span class="s2">== </span><span class="s3">0</span><span class="s2">){</span>
+            <span class="s0">return </span><span class="s3">0</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s0">return </span><span class="s1">fibonnacci</span><span class="s2">(</span><span class="s1">rangN </span><span class="s2">- </span><span class="s3">1 </span><span class="s2">) + </span><span class="s1">fibonnacci</span><span class="s2">(</span><span class="s1">rangN </span><span class="s2">- </span><span class="s3">2</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public static int </span><span class="s1">Fibonnacci</span><span class="s2">(</span><span class="s0">int </span><span class="s1">rangN</span><span class="s2">){</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">rangN </span><span class="s2">&lt; </span><span class="s3">0</span><span class="s2">){</span>
+            <span class="s0">throw new </span><span class="s1">IllegalArgumentException</span><span class="s2">(</span><span class="s4">&quot;Le rang doit être supérieur à 0&quot;</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s0">return </span><span class="s1">fibonnacci</span><span class="s2">(</span><span class="s1">rangN</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public static void </span><span class="s1">initialiser</span><span class="s2">(</span><span class="s0">int</span><span class="s2">[] </span><span class="s1">tab</span><span class="s2">, </span><span class="s0">int </span><span class="s1">valeur</span><span class="s2">) {</span>
+        <span class="s1">initialiser</span><span class="s2">(</span><span class="s1">tab</span><span class="s2">, </span><span class="s1">valeur</span><span class="s2">, </span><span class="s3">0</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s0">private static void </span><span class="s1">initialiser</span><span class="s2">(</span><span class="s0">int</span><span class="s2">[] </span><span class="s1">tab</span><span class="s2">, </span><span class="s0">int </span><span class="s1">valeur</span><span class="s2">, </span><span class="s0">int </span><span class="s1">index</span><span class="s2">) {</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">tab </span><span class="s2">!= </span><span class="s0">null </span><span class="s2">&amp;&amp; </span><span class="s1">index </span><span class="s2">&gt;= </span><span class="s3">0 </span><span class="s2">&amp;&amp; </span><span class="s1">index </span><span class="s2">&lt; </span><span class="s1">tab</span><span class="s2">.</span><span class="s1">length</span><span class="s2">) {</span>
+            <span class="s1">tab</span><span class="s2">[</span><span class="s1">index</span><span class="s2">] = </span><span class="s1">valeur</span><span class="s2">;</span>
+            <span class="s1">initialiser</span><span class="s2">(</span><span class="s1">tab</span><span class="s2">, </span><span class="s1">valeur</span><span class="s2">, </span><span class="s1">index </span><span class="s2">+ </span><span class="s3">1</span><span class="s2">);</span>
+        <span class="s2">}</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public static int </span><span class="s1">ackermann</span><span class="s2">(</span><span class="s0">int </span><span class="s1">m</span><span class="s2">, </span><span class="s0">int </span><span class="s1">n</span><span class="s2">) {</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">m </span><span class="s2">&lt; </span><span class="s3">0 </span><span class="s2">|| </span><span class="s1">n </span><span class="s2">&lt; </span><span class="s3">0</span><span class="s2">) {</span>
+            <span class="s0">return </span><span class="s2">-</span><span class="s3">1</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">m </span><span class="s2">== </span><span class="s3">0</span><span class="s2">) {</span>
+            <span class="s0">return </span><span class="s1">n </span><span class="s2">+ </span><span class="s3">1</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">n </span><span class="s2">== </span><span class="s3">0</span><span class="s2">) {</span>
+            <span class="s0">return </span><span class="s1">ackermann</span><span class="s2">(</span><span class="s1">m </span><span class="s2">- </span><span class="s3">1</span><span class="s2">, </span><span class="s3">1</span><span class="s2">);</span>
+        <span class="s2">}</span>
+        <span class="s0">return </span><span class="s1">ackermann</span><span class="s2">(</span><span class="s1">m </span><span class="s2">- </span><span class="s3">1</span><span class="s2">, </span><span class="s1">ackermann</span><span class="s2">(</span><span class="s1">m</span><span class="s2">, </span><span class="s1">n </span><span class="s2">- </span><span class="s3">1</span><span class="s2">));</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;Suite de fibo pour n=10 est : &quot; </span><span class="s2">+ </span><span class="s1">Fibonnacci</span><span class="s2">(</span><span class="s3">10</span><span class="s2">) + </span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">);</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

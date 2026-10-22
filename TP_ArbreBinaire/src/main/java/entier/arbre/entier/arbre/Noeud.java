@@ -6,6 +6,9 @@ public class Noeud<T extends Comparable<T>> {
     private Noeud<T> valeurNoeudGauche;
     private Noeud<T> valeurNoeudDroite;
 
+    private static final int DECALAGE = 5;
+
+
     public Noeud(T valeurNoeud) {
         if (valeurNoeud != null) {
             this.valeurNoeud = valeurNoeud;
@@ -48,6 +51,10 @@ public class Noeud<T extends Comparable<T>> {
             }
             return this.valeurNoeudDroite.inserer(valeurAInserer);
         }
+    }
+
+    public void afficheArbreNiveau(int niveau) {
+        // TODO
     }
 
     public boolean insererNoeud(T valeurAInserer) {

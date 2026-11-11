@@ -65,6 +65,10 @@ public class Question {
                            + "\nFeedback : " + this.feedback;
     }
 
+    public Niveau getNiveau(){
+        return this.niveau;
+    }
+
     public Categorie setCategorie(Categorie categorie){
         return this.categorie = categorie;
     }

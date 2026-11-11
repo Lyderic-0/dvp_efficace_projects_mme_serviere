@@ -15,6 +15,12 @@ public class Questionnaire {
         this.questions = new ArrayList<>();
     }
 
+    public Questionnaire(int nbSouhaite, Niveau niveau, String categorieNom){
+        this.nbSouhaite = nbSouhaite;
+        this.niveau = niveau;
+        this.categorieNom = categorieNom;
+    }
+
     public Questionnaire(int nbSouhaite, Niveau niveau, String categorieNom, List<Question> questions){
         this.questions = (questions != null) ? new ArrayList<>(questions) : new ArrayList<>();
         this.nbSouhaite = nbSouhaite;
